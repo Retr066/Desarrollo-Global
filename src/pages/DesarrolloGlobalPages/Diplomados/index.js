@@ -1,0 +1,1 @@
+export { Diplomados } from "./Diplomados";

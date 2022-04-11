@@ -1,0 +1,1 @@
+export { Aula } from "./Aula";

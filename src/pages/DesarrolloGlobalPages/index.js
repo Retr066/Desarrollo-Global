@@ -1,0 +1,10 @@
+export { DesarrolloGlobal } from "./Home";
+export { Cursos } from "./Cursos";
+export { Diplomas } from "./Diplomas";
+export { Diplomados } from "./Diplomados";
+export { Inhouse } from "./Inhouse";
+export { Seminarios } from "./Seminarios";
+export { NotFound } from "./NotFound";
+export { Login } from "./Login";
+export { Legal } from "./Legal";
+export { LibroReclamaciones } from "./LibroReclamaciones";

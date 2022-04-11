@@ -1,0 +1,1 @@
+export { NavbarPrincipal } from "./NavbarPrincipal";

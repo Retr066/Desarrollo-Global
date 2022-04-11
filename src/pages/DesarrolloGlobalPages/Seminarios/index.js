@@ -1,0 +1,1 @@
+export { Seminarios } from "./Seminarios";
