@@ -5,9 +5,8 @@ import { Legal, NotFound } from "../pages";
 import { routesHome } from "./routes";
 export const LayoutHome = () => {
   return (
-    <div className="bg-gray-100 font-sans w-full min-h-screen m-0">
+    <div className="bg-white dark:bg-secondary dark:text-white font-sans">
       <NavbarPrincipal />
-
       <Routes>
         {routesHome.map(({ path, Component }, index) => (
           <Route key={index} path={path} element={<Component />} />

@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
 
-const NavItemResponsive = ({ to, nombre, href }) => {
+const NavItemResponsive = ({ to, nombre, href, index }) => {
   return (
-    <li>
+    <li className={`${index >= 1 && "border-t-2"}`}>
       {href === true ? (
         <a
           href={to}
@@ -44,7 +44,7 @@ const NavItemResponsive = ({ to, nombre, href }) => {
 
 export const Sidebar = ({ navShow, links }) => {
   return (
-    <div className={`${navShow && "hidden"} xl:hidden  w-full fixed right-0 `}>
+    <div className={`${navShow && "hidden"} xl:hidden  bg-[rgba(40,45,49,.85)] w-full fixed right-0 `}>
       <aside className="w-full md:w-96 h-screen bg-white dark:bg-secondary " aria-label="Sidebar">
         <div className=" py-4 px-3    rounded ">
           <a href="https://flowbite.com" className="flex items-center pl-2.5 mb-5">
@@ -62,7 +62,7 @@ export const Sidebar = ({ navShow, links }) => {
           </a>
           <ul className="space-y-2">
             {links.map((link, index) => (
-              <NavItemResponsive key={index} {...link} />
+              <NavItemResponsive key={index} index={index} {...link} />
             ))}
           </ul>
         </div>

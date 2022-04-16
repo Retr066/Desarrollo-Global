@@ -1,25 +1,31 @@
-// import { createTheme, ThemeProvider } from "@mui/material";
-// import { createContext, useMemo, useState } from "react";
-// import { getDesignTokens } from "../theme";
+import { createContext, useCallback, useEffect, useMemo, useState } from "react";
 
-// export const ColorModeContext = createContext({ toggleColorMode: () => {} });
+export const ColorModeContext = createContext({ toggleDarkMode: () => {}, isDarkMode: false });
 
-// export default function ColorModeProvider({ children }) {
-//   const [mode, setMode] = useState("light");
-//   const colorMode = useMemo(
-//     () => ({
-//       toggleColorMode: () => {
-//         setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
-//       },
-//     }),
-//     []
-//   );
+export default function ColorModeProvider({ children }) {
+  const [isDarkMode, setIsDarkMode] = useState(() => localStorage.theme === "dark");
+  const colorMode = useMemo(
+    () => ({
+      toggleDarkMode: () => {
+        setIsDarkMode(!isDarkMode);
+      },
+      isDarkMode,
+    }),
+    [isDarkMode]
+  );
 
-//   const theme = useMemo(() => createTheme(getDesignTokens(mode)), [mode]);
+  const getColorMode = useCallback(() => {
+    const html = window.document.documentElement;
+    const prevTheme = isDarkMode ? "light" : "dark";
+    html.classList.remove(prevTheme);
+    const nextTheme = isDarkMode ? "dark" : "light";
+    html.classList.add(nextTheme);
+    localStorage.setItem("theme", nextTheme);
+  }, [isDarkMode]);
 
-//   return (
-//     <ColorModeContext.Provider value={colorMode}>
-//       <ThemeProvider theme={theme}>{children}</ThemeProvider>
-//     </ColorModeContext.Provider>
-//   );
-// }
+  useEffect(() => {
+    getColorMode();
+  }, [getColorMode]);
+
+  return <ColorModeContext.Provider value={colorMode}>{children}</ColorModeContext.Provider>;
+}

@@ -1,8 +1,9 @@
-import { useDarkMode } from "../../../hooks";
+import { useContext } from "react";
+import { ColorModeContext } from "../../../context";
 
 export const ToggleDarkMode = () => {
-  const [isDarkMode, toggleDarkMode] = useDarkMode();
-
+  const { isDarkMode, toggleDarkMode } = useContext(ColorModeContext);
+  console.log(isDarkMode);
   return (
     <button
       type="button"
