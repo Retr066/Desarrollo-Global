@@ -1,25 +1,13 @@
 import React from "react";
-import { NavLink, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import { NavbarPrincipal } from "../components";
 import { Legal, NotFound } from "../pages";
 import { routesHome } from "./routes";
 export const LayoutHome = () => {
   return (
-    <div>
-      <h1>DesarrolloGlobal Page</h1>
-      <ul>
-        <li>
-          <NavLink to="cursos">Cursos</NavLink>
-        </li>
-        <li>
-          <NavLink to="diplomas">Diplomas</NavLink>
-        </li>
-        <li>
-          <NavLink to="usuarios">Administrar Usuarios</NavLink>
-        </li>
-        <li>
-          <NavLink to="legal">Legal</NavLink>
-        </li>
-      </ul>
+    <div className="bg-gray-100 font-sans w-full min-h-screen m-0">
+      <NavbarPrincipal />
+
       <Routes>
         {routesHome.map(({ path, Component }, index) => (
           <Route key={index} path={path} element={<Component />} />

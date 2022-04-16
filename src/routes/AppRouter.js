@@ -1,13 +1,11 @@
 import React, { Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { NavbarPrincipal } from "../components";
 
 import { routes } from "./routes";
 
 export const AppRouter = () => {
   return (
     <>
-      <NavbarPrincipal />
       <Suspense fallback={<h1>Loading....</h1>}>
         <BrowserRouter>
           <Routes>
