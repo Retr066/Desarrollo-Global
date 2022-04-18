@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const ConteinerFooter = styled.div`
@@ -6,5 +7,10 @@ const ConteinerFooter = styled.div`
 `;
 
 export const Footer = () => {
-  return <ConteinerFooter className="h-80">Footer</ConteinerFooter>;
+  return (
+    <ConteinerFooter>
+      Footer {"  "}
+      <Link to="legal">ir Legal</Link>
+    </ConteinerFooter>
+  );
 };

@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./node_modules/flowbite/**/*.js"],
   darkMode: "class",
   theme: {
     fontFamily: {
@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         transparent: "transparent",
         primary: {
+          light: "#0f59cf",
           DEFAULT: "#004FCC",
         },
         secondary: {
@@ -26,5 +27,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };
