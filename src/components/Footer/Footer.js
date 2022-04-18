@@ -6,5 +6,5 @@ const ConteinerFooter = styled.div`
 `;
 
 export const Footer = () => {
-  return <ConteinerFooter>Footer</ConteinerFooter>;
+  return <ConteinerFooter className="h-80">Footer</ConteinerFooter>;
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { NavbarPrincipal } from "../components";
+import { Footer } from "../components/Footer/Footer";
 import { Legal, NotFound } from "../pages";
 import { routesHome } from "./routes";
 export const LayoutHome = () => {
@@ -14,6 +15,7 @@ export const LayoutHome = () => {
         <Route path="/legal/*" element={<Legal />} />
         <Route path="/*" element={<NotFound />} replace />
       </Routes>
+      <Footer />
     </div>
   );
 };
