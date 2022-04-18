@@ -36,7 +36,6 @@ export const NavbarPrincipal = () => {
           </nav>
         </div>
       </div>
-
       <NavbarResponsivo navShow={navShow} links={links} toggleMenuResponsive={toggleMenuResponsive} />
     </>
   );
