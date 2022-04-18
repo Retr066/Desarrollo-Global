@@ -1,13 +1,13 @@
 import { useContext } from "react";
-import { ColorModeContext } from "../../../context";
+import { ColorModeContext } from "../../context";
 
 export const ToggleDarkMode = () => {
   const { isDarkMode, toggleDarkMode } = useContext(ColorModeContext);
-  console.log(isDarkMode);
+
   return (
     <button
       type="button"
-      className="w-10 h-4 mx-2 rounded-full  bg-primary dark:bg-secondary flex items-center transition duration-300 focus:outline-none shadow"
+      className="w-10 h-4 mx-2 rounded-full  bg-primary dark:bg-dark flex items-center transition duration-300 focus:outline-none shadow"
       onClick={toggleDarkMode}
     >
       <div
