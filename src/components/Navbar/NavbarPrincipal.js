@@ -4,6 +4,7 @@ import { ToggleDarkMode } from "../ToggleDarkMode";
 import { links } from "./data";
 import { LogoNavbar, NavListItem, CarritoDeCompras, Buscador, NavbarResponsivo, SpanMenu } from "./partials";
 
+
 export const NavbarPrincipal = () => {
   const [navShow, setNavShow] = useState(true);
   const toggleMenuResponsive = useCallback(() => {

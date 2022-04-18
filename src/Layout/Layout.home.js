@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { NavbarPrincipal, Footer, LoginModal } from "../components";
-
 import { Legal, NotFound } from "../pages";
 import { routesHome } from "./routes";
 export const LayoutHome = () => {
