@@ -83,8 +83,7 @@ export const PoliticasProteccionDatos = () => {
         DesarrolloGlobal.pe tomara medidas comerciales razonables para proteger dicha información y establecer una conexión segura con
         nuestro Navegador de Web.
       </p>
-      <p>
-        DesarrolloGlobal.pe emplea{" "}
+      <p>DesarrolloGlobal.pe emplea{" "}
         <strong>certificados SSL (capa de sockets seguros) son una pieza esencial de la seguridad de los sitios web</strong>, conocida como{" "}
         <strong>capa de sockets seguros ("SSL")</strong> para proteger la transmisión de información de pago al Website. Puede usted
         chequear la seguridad de su conexión tras observar la barra de direcciones en su ventana de Navegador. Cuando usted acceda un
