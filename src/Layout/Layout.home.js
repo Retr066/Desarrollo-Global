@@ -1,21 +1,32 @@
-import React from "react";
+import React, { useCallback, useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import { NavbarPrincipal, Footer, LoginModal } from "../components";
+import { NavbarHome, Footer, LoginModal } from "../components";
 import { Legal, NotFound } from "../pages";
 import { routesHome } from "./routes";
+
+import { ModalLoginContext } from "../context";
 export const LayoutHome = () => {
+  const [verModal, setVerModal] = useState(false);
+  const toggleVerModal = useCallback(() => {
+    setVerModal(!verModal);
+  }, [verModal]);
+
   return (
-    <div className="bg-white dark:bg-secondary dark:text-white font-sans">
-      <NavbarPrincipal />
-      <Routes>
-        {routesHome.map(({ path, Component }, index) => (
-          <Route key={index} path={path} element={<Component />} />
-        ))}
-        <Route path="/legal/*" element={<Legal />} />
-        <Route path="/*" element={<NotFound />} replace />
-      </Routes>
-      <LoginModal />
-      <Footer />
-    </div>
+    <>
+      <ModalLoginContext.Provider value={{ verModal, toggleVerModal }}>
+        <div className="bg-white dark:bg-secondary dark:text-white font-sans">
+          <NavbarHome />
+          <Routes>
+            {routesHome.map(({ path, Component }, index) => (
+              <Route key={index} path={path} element={<Component />} />
+            ))}
+            <Route path="/legal/*" element={<Legal />} />
+            <Route path="/*" element={<NotFound />} replace />
+          </Routes>
+          <LoginModal verModal={verModal} toggleVerModal={toggleVerModal} />
+          <Footer />
+        </div>
+      </ModalLoginContext.Provider>
+    </>
   );
 };
