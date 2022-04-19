@@ -1,15 +1,20 @@
-import { useCallback, useState } from "react";
-import { ButtonPrimary } from "../buttons";
-import { ToggleDarkMode } from "../ToggleDarkMode";
-import { links } from "./data";
-import { LogoNavbar, NavListItem, CarritoDeCompras, Buscador, NavbarResponsivo, SpanMenu } from "./partials";
+import { useCallback, useContext, useState } from "react";
+import { Buscador } from "../../Buscador";
+import { ButtonPrimary } from "../../buttons";
+import { NavbarResponsivo } from "../NavbarResponsivo";
+import { ToggleDarkMode } from "../../ToggleDarkMode";
+import { links } from "../data";
+import { LogoNavbar, NavListItem, CarritoDeCompras, SpanMenu } from "./partials";
+import { ModalLoginContext } from "../../../context";
 
-
-export const NavbarPrincipal = () => {
+export const NavbarHome = () => {
   const [navShow, setNavShow] = useState(true);
+  const { toggleVerModal } = useContext(ModalLoginContext);
+
   const toggleMenuResponsive = useCallback(() => {
     setNavShow(!navShow);
   }, [navShow]);
+
   return (
     <>
       <div className="bg-transparent shadow fixed z-30 w-full backdrop-blur-[20px]">
@@ -27,12 +32,12 @@ export const NavbarPrincipal = () => {
               <Buscador />
               <CarritoDeCompras />
               <ToggleDarkMode />
-              <ButtonPrimary>Inicia sesión</ButtonPrimary>
+              <ButtonPrimary onClick={toggleVerModal}>Inicia sesión</ButtonPrimary>
             </div>
 
             <div className="flex items-center md:hidden">
               <CarritoDeCompras />
-              <ButtonPrimary>Entrar</ButtonPrimary>
+              <ButtonPrimary onClick={toggleVerModal}>Entrar</ButtonPrimary>
             </div>
           </nav>
         </div>

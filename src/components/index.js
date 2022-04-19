@@ -1,4 +1,4 @@
-export { NavbarPrincipal } from "./Navbar";
+export { NavbarHome } from "./NavbarHome";
 export { ButtonPrimary } from "./buttons";
 export { Footer } from "./Footer";
 export { ToggleDarkMode } from "./ToggleDarkMode";
