@@ -60,7 +60,7 @@ export const Legal = () => {
           className={`col-span-2 xl:col-span-2 lg:block max-h-screen
             ${
               sidebar
-                ? "block bg-white dark:bg-secondary lg:bg-transparent col-span-8 fixed lg:sticky z-20 lg:z-0 h-full lg:h-auto w-full lg:w-auto pt-[100px] lg:pt-0 top-0 lg:top-0 left-0 lg:left-0 pl-[30px] lg:pl-0"
+                ? "block bg-white dark:bg-secondary lg:bg-transparent col-span-8 fixed lg:sticky z-20 lg:z-0 h-screen lg:h-auto w-full lg:w-auto pt-[100px] lg:pt-0 top-0 lg:top-0 left-0 lg:left-0 pl-[30px] lg:pl-0"
                 : "top-[100px] hidden sticky"
             }`}
         >

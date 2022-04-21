@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export const PoliticasProteccionDatos = () => {
   return (
-    <div>
+    <>
       <h1 className="uppercase font-black text-xl">Políticas de Proteccion de datos</h1>
       <p className="text-[14px] text-gray-400">Última actualización: 18 de Abril del 2022</p>
       <h4 className="underline py-[15px] text-lg font-bold">DESARROLLO GLOBAL</h4>
@@ -198,6 +198,6 @@ export const PoliticasProteccionDatos = () => {
         </Link>{" "}
         CENTRO DE CAPACITACIÓN Y DESARROLLO GLOBAL en JR. RISSO 242 OF 201 LINCE LIMA – PERÚ.
       </p>
-    </div>
+    </>
   );
 };
