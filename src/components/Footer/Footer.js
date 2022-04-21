@@ -11,13 +11,13 @@ export const Footer = () => {
       <div className="lg:flex lg:justify-between">
         <div className="mb-6 md:mb-0 flex flex-col sm:flex-row gap-8 lg:block items-center  lg:mr-4  ">
           <div className="flex flex-col justify-center items-center ">
-            <Logo tipo="link" style={{ minWidth: "auto" }} className="h-[100%] max-w-[340px] w-full" />
+            <Logo tipo="link" style={{ minWidth: "auto", height: "100%" }} className="max-w-[340px] w-full" />
             <p className="text-center font-semibold">Capacitación para Funcionarios y Servidores Públicos</p>
           </div>
           <div className="flex flex-col justify-center items-center ">
             <img
               style={{ minWidth: "auto" }}
-              className="h-[10%] max-w-[240px] w-full"
+              className="h-full max-w-[240px] w-full"
               src={certificadoIso}
               alt="Certificado Iso 9001:2015"
             />
@@ -28,18 +28,18 @@ export const Footer = () => {
         </div>
         <div className="grid justify-items-start content-center grid-cols-1 xs:grid-cols-2 sm:grid-cols-3  gap-8 sm:gap-6 mt-8 lg:m-0 ">
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contacta a DesarrolloGlobal</h2>
+            <h2 className="mb-6 text-sm font-bold text-gray-900 uppercase dark:text-white">Contacta a DesarrolloGlobal</h2>
             <LinkList links={contactosLinks} />
           </div>
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white ">Dónde Estamos</h2>
+            <h2 className="mb-6 text-sm font-bold text-gray-900 uppercase dark:text-white ">Dónde Estamos</h2>
             <div className="text-gray-600 dark:text-gray-400">
               <p className="font-bold">Oficina Administrativa</p>
               <p>Av. Julio C. Tello 741 Lince (01) 5556005</p>
             </div>
           </div>
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Enlaces de ayuda</h2>
+            <h2 className="mb-6 text-sm font-bold text-gray-900 uppercase dark:text-white">Enlaces de ayuda</h2>
             <LinkList links={legalLinks} />
           </div>
         </div>
