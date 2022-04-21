@@ -1,63 +1,26 @@
-import { useCallback, useRef } from "react";
-
+import { Logo } from "../Logo";
+import Modal from "../Modal";
+import iconPC from "../../assets/imgs/icon-pc-login.png";
+import { Form, Parrafo, RedesSociales } from "./partials";
 export const LoginModal = ({ verModal, toggleVerModal }) => {
-  const modalFondoElement = useRef();
-  const cerrarModal = useCallback(
-    (e) => {
-      if (e.target === modalFondoElement.current) {
-        toggleVerModal();
-      }
-    },
-    [toggleVerModal]
-  );
   return (
     <>
-      {verModal && (
-        <>
-          <div
-            ref={modalFondoElement}
-            onClick={cerrarModal}
-            className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
-          >
-            <div className="relative w-auto my-6 mx-auto max-w-4xl">
-              {/*content*/}
-              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white dark:bg-secondary outline-none focus:outline-none">
-                {/*header*/}
-                <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
-                  <h3 className="text-3xl font-semibold">Modal Title</h3>
-                  <button className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none">
-                    <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">×</span>
-                  </button>
-                </div>
-                {/*body*/}
-                <div className="relative p-6 flex-auto">
-                  <p className="my-4 text-slate-500 text-lg leading-relaxed">
-                    I always felt like I could do anything. That’s the main thing people are controlled by! Thoughts- their perception of
-                    themselves! They're slowed down by their perception of themselves. If you're taught you can’t do anything, you won’t do
-                    anything. I was taught I could do everything.
-                  </p>
-                </div>
-                {/*footer*/}
-                <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
-                  <button
-                    className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                    type="button"
-                  >
-                    Close
-                  </button>
-                  <button
-                    className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                    type="button"
-                  >
-                    Save Changes
-                  </button>
-                </div>
-              </div>
-            </div>
+      <Modal verModal={verModal} toggleVerModal={toggleVerModal} className="max-w-4xl ">
+        <div className="flex md:flex-row flex-col py-8 ">
+          <div className=" w-full md:w-1/2 px-10 hidden md:block">
+            <Logo className="mb-3 " />
+            <h3 className="text-3xl font-extrabold mb-3 ml-7">BIENVENIDOS</h3>
+            <img className="w-full h-auto" src={iconPC} alt="pc icono desarrollo global" />
+            <Parrafo>Ingresa a tu Aula Virtual y sigue aprendiendo y mejorando tus competencias profesionales.</Parrafo>
           </div>
-          <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
-        </>
-      )}
+          <div className="w-full md:w-1/2  px-4">
+            <h3 className="text-center text-3xl font-bold mb-3">Aula Virtual</h3>
+            <Parrafo>Ingresa tu email y contraseña para que puedas ingresar al aula virtual.</Parrafo>
+            <Form />
+            <RedesSociales />
+          </div>
+        </div>
+      </Modal>
     </>
   );
 };
