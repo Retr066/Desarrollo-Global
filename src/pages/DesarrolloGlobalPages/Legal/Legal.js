@@ -1,10 +1,10 @@
 import { Navigate, NavLink, Route, Routes } from "react-router-dom";
 import { routesLegal } from "./routes";
 
-import { Container } from "../../../components/Container/Container";
+import { Container } from "../../../Container";
 import { useState } from "react";
 
-const NavItem = ({ to, nombre }, index) => {
+const NavItem = ({ to, nombre }) => {
   return (
     <li className="text-lg font-black py-2 pr-[20px]">
       <NavLink
@@ -25,18 +25,8 @@ const PrimerComponent = routesLegal[0].path;
 
 const AbrirIcon = () => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-6 w-6 stroke-2"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z"
-      />
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 stroke-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z" />
     </svg>
   );
 };
@@ -50,10 +40,7 @@ export const Legal = () => {
   return (
     <Container>
       <div className="font-nanito grid grid-cols-8 pt-7">
-        <button
-          className="lg:hidden col-span-8 flex text-center text-gray-400 font-extrabold text-lg"
-          onClick={handleDesactivate}
-        >
+        <button className="lg:hidden col-span-8 flex text-center text-gray-400 font-extrabold text-lg" onClick={handleDesactivate}>
           <AbrirIcon /> <h1 className="ml-[15px]">Regresar</h1>
         </button>
         <div
@@ -74,11 +61,7 @@ export const Legal = () => {
         </div>
         <main className="col-span-8 xl:col-span-6 lg:col-span-6 text-justify pt-[20px] lg:pt-[70px]">
           <Routes>
-            <Route
-              index
-              path="/"
-              element={<Navigate to={`/legal${PrimerComponent}`} />}
-            />
+            <Route index path="/" element={<Navigate to={`/legal${PrimerComponent}`} />} />
             {routesLegal.map(({ path, Component }, index) => (
               <Route key={index} path={path} element={<Component />} />
             ))}
