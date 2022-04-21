@@ -1,3 +1,4 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: "class",
@@ -6,6 +7,10 @@ module.exports = {
       nanito: ["Nunito", "sans-serif"],
     },
     extend: {
+      screens: {
+        xs: { min: "475px", max: "640px" },
+        ...defaultTheme.screens,
+      },
       colors: {
         transparent: "transparent",
         primary: {

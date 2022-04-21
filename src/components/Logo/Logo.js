@@ -5,13 +5,13 @@ import logoBlanco from "../../assets/imgs/logo-DG-blanco.png";
 import { useContext } from "react";
 import { ColorModeContext } from "../../context";
 
-export const Logo = ({ tipo = "estatico", className = "" }) => {
+export const Logo = ({ tipo = "estatico", className = "", style }) => {
   const { isDarkMode } = useContext(ColorModeContext);
 
   if (tipo === "estatico") {
     return (
       <>
-        <img className={`min-w-max h-12 ${className}`} src={isDarkMode ? logoBlanco : logo} alt="Logo Desarrollo Global" />
+        <img style={style} className={`min-w-max h-12 ${className}`} src={isDarkMode ? logoBlanco : logo} alt="Logo Desarrollo Global" />
       </>
     );
   }
@@ -19,7 +19,7 @@ export const Logo = ({ tipo = "estatico", className = "" }) => {
   if (tipo === "link") {
     return (
       <Link to="/">
-        <img className={`min-w-max h-12 ${className}`} src={isDarkMode ? logoBlanco : logo} alt="Logo Desarrollo Global" />
+        <img style={style} className={`min-w-max h-12 ${className}`} src={isDarkMode ? logoBlanco : logo} alt="Logo Desarrollo Global" />
       </Link>
     );
   }

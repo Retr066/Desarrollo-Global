@@ -1,6 +1,8 @@
+import { Container } from "../../../components/Container/Container";
+
 export const DesarrolloGlobal = () => {
   return (
-    <div>
+    <Container>
       <div className="pt-20">
         <img src="https://archivos-comunes.s3.amazonaws.com/2022/promocion_abril.png" alt="banner" />
       </div>
@@ -68,6 +70,6 @@ export const DesarrolloGlobal = () => {
         </p>
         <br />
       </div>
-    </div>
+    </Container>
   );
 };
