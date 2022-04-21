@@ -4,8 +4,9 @@ import { ButtonPrimary } from "../../buttons";
 import { NavbarResponsivo } from "../NavbarResponsivo";
 import { ToggleDarkMode } from "../../ToggleDarkMode";
 import { links } from "../data";
-import { LogoNavbar, NavListItem, CarritoDeCompras, SpanMenu } from "./partials";
+import { NavListItem, CarritoDeCompras, SpanMenu } from "./partials";
 import { ModalLoginContext } from "../../../context";
+import { Logo } from "../../Logo";
 
 export const NavbarHome = () => {
   const [navShow, setNavShow] = useState(true);
@@ -22,7 +23,7 @@ export const NavbarHome = () => {
           <nav className="flex items-center justify-between py-4">
             <div className="flex items-center">
               <SpanMenu toggleMenuResponsive={toggleMenuResponsive} />
-              <LogoNavbar />
+              <Logo tipo="link" />
               <div className="hidden lg:hidden xl:flex xl:items-center">
                 <NavListItem links={links} />
               </div>
@@ -32,7 +33,9 @@ export const NavbarHome = () => {
               <Buscador />
               <CarritoDeCompras />
               <ToggleDarkMode />
-              <ButtonPrimary onClick={toggleVerModal}>Inicia sesión</ButtonPrimary>
+              <ButtonPrimary className="ml-2" onClick={toggleVerModal}>
+                Inicia sesión
+              </ButtonPrimary>
             </div>
 
             <div className="flex items-center md:hidden">
