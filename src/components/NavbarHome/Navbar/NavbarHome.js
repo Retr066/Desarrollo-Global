@@ -18,7 +18,7 @@ export const NavbarHome = () => {
 
   return (
     <>
-      <div className="bg-transparent shadow fixed z-30 w-full backdrop-blur-[20px]">
+      <div className="bg-transparent shadow sticky top-0 left-0 right-0 z-30 w-full backdrop-blur-[20px]">
         <div className="container mx-auto px-4">
           <nav className="flex items-center justify-between py-4">
             <div className="flex items-center">

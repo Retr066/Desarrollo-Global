@@ -32,7 +32,7 @@ export const NavbarResponsivo = ({ navShow, links, toggleMenuResponsive }) => {
       >
         <div className=" py-4 px-3 rounded flex flex-col h-full">
           <MenuTitulo toggleMenuResponsive={toggleMenuResponsive} />
-          <div className="md:hidden  border-b-2 pb-5">
+          <div className="md:hidden  border-b pb-5">
             <Buscador width="w-full" />
           </div>
           <NavListItems links={links} toggleMenuResponsive={toggleMenuResponsive} />

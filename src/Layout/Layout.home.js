@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import { NavbarHome, Footer, LoginModal } from "../components";
+import { NavbarHome, Footer, LoginModal, BannerAnuncio } from "../components";
 import { Legal, NotFound } from "../pages";
 import { routesHome } from "./routes";
 
@@ -15,6 +15,7 @@ export const LayoutHome = () => {
     <>
       <ModalLoginContext.Provider value={{ verModal, toggleVerModal }}>
         <div className="bg-white dark:bg-secondary dark:text-white font-sans">
+          <BannerAnuncio />
           <NavbarHome />
           <Routes>
             {routesHome.map(({ path, Component }, index) => (
