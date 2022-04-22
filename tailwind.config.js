@@ -8,7 +8,7 @@ module.exports = {
     },
     extend: {
       screens: {
-        xs: { min: "475px", max: "640px" },
+        xs: { min: "475px", max: "639px" },
         ...defaultTheme.screens,
       },
       colors: {
