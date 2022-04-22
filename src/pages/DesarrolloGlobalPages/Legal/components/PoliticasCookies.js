@@ -9,7 +9,7 @@ export const PoliticasCookies = () => {
         <strong>CENTRO DE CAPACITACION Y DESARROLLO GLOBAL, EIRL</strong> necesita implantar cookies, propias y de terceros, para ofrecer su
         contenido en la web y además prestar a sus usuarios un mejor servicio.
       </p>
-      <h4>¿Qué son las cookies?</h4>
+      <h4 className="text-xl font-extrabold underline py-4">¿Qué son las cookies?</h4>
       <p>
         Las cookies son archivos de texto que contienen pequeñas cantidades de información y que se descargan en el dispositivo del usuario
         cuando visita una página web. Las cookies son pequeños archivos de texto que contienen información y que se descargan en el
@@ -26,13 +26,13 @@ export const PoliticasCookies = () => {
         La ley vigente permite que almacenemos cookies en su dispositivo si estas son estrictamente necesarias para el funcionamiento de
         esta página. Así, para todos los demás tipos de cookies necesitamos su permiso.
       </p>
-      <h4>¿Qué tipos de cookies existen?</h4>
+      <h4 className="text-xl font-extrabold underline py-4">¿Qué tipos de cookies existen?</h4>
       <p>
         A continuación informamos a nuestros usuarios que esta página web utiliza tipos diferentes de cookies que pueden ser clasificadas
         del siguiente modo.
       </p>
-      <h4>Según su finalidad:</h4>
-      <ul>
+      <h4 className="text-xl font-extrabold underline py-4">Según su finalidad:</h4>
+      <ul className="list-[circle] pl-10">
         <li>
           <strong>Cookies Técnicas o Necesarias:</strong>Las cookies necesarias ayudan a hacer una página web utilizable activando funciones
           básicas como la navegación en la página y el acceso a áreas seguras de la página web. La página web no puede funcionar
@@ -57,8 +57,8 @@ export const PoliticasCookies = () => {
           clasificar, junto con los proveedores de cookies individuales.
         </li>
       </ul>
-      <h4>Según el tiempo que permanecen activadas:</h4>
-      <ul>
+      <h4 className="text-xl font-extrabold underline py-4">Según el tiempo que permanecen activadas:</h4>
+      <ul className="list-[circle] pl-10">
         <li>
           <strong>Cookies de Sesión:</strong>aquellas que guardan exclusivamente información del usuario durante el tiempo que dura su
           visita a nuestra página web.
@@ -68,8 +68,8 @@ export const PoliticasCookies = () => {
           web, recordando las preferencias seleccionadas.
         </li>
       </ul>
-      <h4>Según la entidad que las gestiona:</h4>
-      <ul>
+      <h4 className="text-xl font-extrabold underline py-4">Según la entidad que las gestiona:</h4>
+      <ul className="list-[circle] pl-10">
         <li>
           <strong>Cookies propias: </strong>aquellas gestionadas por nuestra página web a la que el usuario accede y solicita su servicio.
         </li>
@@ -88,7 +88,7 @@ export const PoliticasCookies = () => {
         consentir su uso. Puede obtener más información sobre las transferencias a estos países y cómo se llevan a cabo, a través de las
         correspondientes políticas de estos proveedores aquí facilitadas:
       </p>
-      <ul>
+      <ul className="list-[circle] pl-10">
         <li>
           Google:{" "}
           <Link
@@ -160,20 +160,20 @@ export const PoliticasCookies = () => {
           </Link>
         </li>
       </ul>
-      <h4>Declaración de cookies utilizadas</h4>
+      <h4 className="text-xl font-extrabold underline py-4">Declaración de cookies utilizadas</h4>
       <script
         id="CookieDeclaration"
         src="https://consent.cookiebot.com/c340bb80-30e1-46fd-8fff-ad96dc1a5780/cd.js"
         type="text/javascript"
         async
       ></script>
-      <h4>Desactivación o eliminación de cookies</h4>
+      <h4 className="text-xl font-extrabold underline py-4">Desactivación o eliminación de cookies</h4>
       <p>
         El usuario, en su primer acceso al sitio web puede configurar y aceptar o rechazar las cookies en el presente Sitio Web.
         Posteriormente, el usuario podrá, en cualquier momento, cambiar o retirar su consentimiento a través de la presente Política de
         Cookies o configurar su navegador como se le indica a continuación:
       </p>
-      <ul>
+      <ul className="list-[circle] pl-10">
         <li>
           Cómo eliminar las cookies en{" "}
           <Link
@@ -211,21 +211,21 @@ export const PoliticasCookies = () => {
           </Link>
         </li>
       </ul>
-      <h4>¿Qué ocurre si desactivo las cookies?</h4>
+      <h4 className="text-xl font-extrabold underline py-4">¿Qué ocurre si desactivo las cookies?</h4>
       <p>
         Si rechaza o desactiva algunas de las cookies instaladas, puede que el sitio web no funcione correctamente y no sea posible adaptar
         los contenidos, o apariencia de la navegación, a las preferencias personales de cada usuario (zona geográfica, franja horaria).
         Asimismo, no será posible mostrar publicidad personalizada o permitir la interacción con redes sociales para visualizar y compartir
         opiniones en las publicaciones de El Independiente.
       </p>
-      <h4>Protección de datos personales</h4>
+      <h4 className="text-xl font-extrabold underline py-4">Protección de datos personales</h4>
       <p>
         Las cookies empleadas en el sitio web permiten recabar información sobre usted, sus preferencias o su dispositivo, permitiendo que
         el sitio web funcione correctamente; sin que se recabe información sensible. Por lo general no es posible la identificación directa
         del usuario por la información almacenada en las cookies, no obstante, puede obtener más información sobre quiénes somos, cómo puede
         contactarnos y cómo tratamos sus datos personales en nuestra Política de Protección de Datos Personales.
       </p>
-      <h4>Modificaciones de la Política de Cookies</h4>
+      <h4 className="text-xl font-extrabold underline py-4">Modificaciones de la Política de Cookies</h4>
       <p>
         <strong>CENTRO DE CAPACITACION Y DESARROLLO GLOBAL, EIRL</strong> se reserva el derecho a modificar la presente Política de Cookies,
         siempre en los términos permitidos por la legislación española vigente y previa comunicación a los interesados, bien mediante
