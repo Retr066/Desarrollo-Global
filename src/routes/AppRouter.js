@@ -12,7 +12,6 @@ export const AppRouter = () => {
             {routes.map(({ path, Component }, index) => (
               <Route key={index} path={path} element={<Component />} />
             ))}
-
             <Route path="/*" element={<h1> error</h1>} replace />
           </Routes>
         </BrowserRouter>

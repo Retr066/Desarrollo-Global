@@ -1,5 +1,5 @@
 import { useCallback, useRef } from "react";
-
+import { ButtonClose } from "../buttons";
 import { ModalBody, ModalFooter, ModalHeader } from "./partials";
 
 export const Modal = ({ children, verModal, toggleVerModal, className = "max-w-4xl" }) => {
@@ -28,13 +28,7 @@ export const Modal = ({ children, verModal, toggleVerModal, className = "max-w-4
            delay-75 transition ease-linear  duration-200  relative w-auto my-6 mx-auto ${className}`}
         >
           <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white dark:bg-secondary outline-none focus:outline-none">
-            <button
-              type="button"
-              onClick={toggleVerModal}
-              className="md:hidden p-1 ml-auto border-0  right-0  absolute text-3xl leading-none font-semibold outline-none focus:outline-none"
-            >
-              <span className=" h-6 w-6 text-2xl block outline-none focus:outline-none">X</span>
-            </button>
+            <ButtonClose className="md:hidden" onClick={toggleVerModal} />
             {children}
           </div>
         </div>

@@ -20,14 +20,14 @@ export const NavbarResponsivo = ({ navShow, links, toggleMenuResponsive }) => {
         <div
           onClick={switchBackground}
           ref={sidebarElement}
-          className="bg-[rgba(0,0,0,.35)] xl:hidden w-full h-screen fixed right-0 z-50"
+          className="bg-[rgba(0,0,0,.35)] inset-0 xl:hidden w-full h-screen fixed right-0 z-50"
         ></div>
       )}
 
       <aside
         className={`${
           navShow ? "-translate-x-[110%]" : "translate-x-[0%]"
-        } transition ease-out  duration-150 fixed w-full sm:max-w-[380px] xl:hidden h-screen bg-white dark:bg-secondary z-[51]`}
+        } transition ease-out inset-0  duration-150 fixed w-full sm:max-w-[380px] xl:hidden h-screen bg-white dark:bg-secondary z-[51]`}
         aria-label="Sidebar"
       >
         <div className=" py-4 px-3 rounded flex flex-col h-full">

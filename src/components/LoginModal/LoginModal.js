@@ -8,7 +8,7 @@ export const LoginModal = ({ verModal, toggleVerModal }) => {
       <Modal verModal={verModal} toggleVerModal={toggleVerModal} className="max-w-4xl ">
         <div className="flex md:flex-row flex-col py-8 ">
           <div className=" w-full md:w-1/2 px-10 hidden md:block">
-            <Logo className="mb-3 " />
+            <Logo className="mb-3 h-24" />
             <h3 className="text-3xl font-extrabold mb-3 ml-7">BIENVENIDOS</h3>
             <img className="w-full h-auto" src={iconPC} alt="pc icono desarrollo global" />
             <Parrafo>Ingresa a tu Aula Virtual y sigue aprendiendo y mejorando tus competencias profesionales.</Parrafo>

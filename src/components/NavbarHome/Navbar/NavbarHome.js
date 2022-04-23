@@ -9,21 +9,20 @@ import { ModalLoginContext } from "../../../context";
 import { Logo } from "../../Logo";
 
 export const NavbarHome = () => {
-  const [navShow, setNavShow] = useState(true);
   const { toggleVerModal } = useContext(ModalLoginContext);
-
+  const [navShow, setNavShow] = useState(true);
   const toggleMenuResponsive = useCallback(() => {
     setNavShow(!navShow);
   }, [navShow]);
 
   return (
     <>
-      <div className="bg-transparent shadow sticky top-0 left-0 right-0 z-30 w-full backdrop-blur-[20px]">
+      <div className={`bg-transparent shadow  sticky top-0 left-0 right-0 z-30 w-full backdrop-blur-[20px]`}>
         <div className="container mx-auto px-4">
           <nav className="flex items-center justify-between py-4">
             <div className="flex items-center">
               <SpanMenu toggleMenuResponsive={toggleMenuResponsive} />
-              <Logo tipo="link" />
+              <Logo tipo="link" width="max-w-[200px]" />
               <div className="hidden lg:hidden xl:flex xl:items-center">
                 <NavListItem links={links} />
               </div>

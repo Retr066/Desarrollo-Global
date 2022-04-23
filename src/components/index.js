@@ -7,3 +7,5 @@ export { LoginModal } from "./LoginModal";
 export { Modal } from "./Modal";
 export { Logo } from "./Logo";
 export { BannerAnuncio } from "./BannerAnuncio";
+export { ButtonClose } from "./buttons";
+export { LogoIso } from "./LogoIso";
