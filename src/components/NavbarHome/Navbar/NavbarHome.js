@@ -22,7 +22,7 @@ export const NavbarHome = () => {
           <nav className="flex items-center justify-between py-4">
             <div className="flex items-center">
               <SpanMenu toggleMenuResponsive={toggleMenuResponsive} />
-              <Logo tipo="link" width="max-w-[200px]" />
+              <Logo tipo="link" width="max-w-[180px]" />
               <div className="hidden lg:hidden xl:flex xl:items-center">
                 <NavListItem links={links} />
               </div>

@@ -33,10 +33,22 @@ export const Logo = ({ tipo = "estatico", className = "", style = { minWidth: "a
       </Link>
     );
   }
+  if (tipo === "reversa") {
+    return (
+      <>
+        <img
+          style={style}
+          className={`min-w-[175px]  w-auto h-12 ${className}`}
+          src={isDarkMode ? logo : logoBlanco}
+          alt="Logo Desarrollo Global"
+        />
+      </>
+    );
+  }
 
   return (
     <>
-      Tipo invalido solo <span className="text-primary">link o estatico</span>
+      Tipo invalido solo <span className="text-primary">link o estatico o reversa</span>
     </>
   );
 };

@@ -20,7 +20,7 @@ export const Modal = ({ children, verModal, toggleVerModal, className = "max-w-4
         ref={modalFondoElement}
         onClick={cerrarModal}
         className={`${
-          verModal ? "translate-y-[0%]" : "delay-200 pointer-events-none -translate-y-[100%]"
+          verModal ? "translate-y-[0%]" : "delay-500 pointer-events-none -translate-y-[100%]"
         } justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none`}
       >
         <div

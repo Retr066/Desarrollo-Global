@@ -2,7 +2,10 @@ import { Logo } from "../Logo";
 import Modal from "../Modal";
 import iconPC from "../../assets/imgs/icon-pc-login.png";
 import { Form, Parrafo, RedesSociales } from "./partials";
-export const LoginModal = ({ verModal, toggleVerModal }) => {
+import { ModalLoginContext } from "../../context";
+import { useContext } from "react";
+export const LoginModal = () => {
+  const { verModal, toggleVerModal } = useContext(ModalLoginContext);
   return (
     <>
       <Modal verModal={verModal} toggleVerModal={toggleVerModal} className="max-w-4xl ">

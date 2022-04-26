@@ -1,5 +1,5 @@
 import { forwardRef } from "react";
-import { linksButtonSpan } from "../data";
+import { linksButtonSpan } from "../../../data";
 import { ButtonSpan } from "./ButtonSpan";
 
 export const ButtonsSpanList = forwardRef((props, ref) => {

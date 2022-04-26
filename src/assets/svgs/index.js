@@ -5,3 +5,6 @@ export { IconWhatsApp } from "./IconsSocialMedia";
 export { IconTelegram } from "./IconsSocialMedia";
 export { IconYouTube } from "./IconsSocialMedia";
 export { IconGitHub } from "./IconsSocialMedia";
+export { IconCertificado } from "./IconsSocialMedia";
+export { IconIso9001 } from "./IconsSocialMedia";
+export { IconGarantia } from "./IconsSocialMedia";

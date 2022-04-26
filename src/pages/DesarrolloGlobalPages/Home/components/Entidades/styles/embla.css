@@ -1,0 +1,15 @@
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  position: relative;
+  flex: 0 0 500px;
+  align-self: center;
+}
+.embla__slide-seminarios {
+  position: relative;
+  flex: 0 0 100%;
+}

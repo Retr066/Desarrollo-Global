@@ -1,0 +1,1 @@
+export { DescripcionList } from "./DescripcionList";

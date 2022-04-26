@@ -1,0 +1,1 @@
+export { SliderCursos } from "./SliderCursos";

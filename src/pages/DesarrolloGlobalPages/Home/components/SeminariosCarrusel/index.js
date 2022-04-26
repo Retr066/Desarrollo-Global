@@ -1,0 +1,1 @@
+export { SeminariosCarrusel } from "./SeminariosCarrusel";

@@ -8,7 +8,11 @@ export const Cursos = () => {
         <div className="flex flex-wrap -mx-4">
           <div className="w-full md:w-1/2 xl:w-1/3 px-4">
             <div className="bg-white rounded-lg overflow-hidden mb-10">
-              <img src="https://s3-us-west-2.amazonaws.com/uploads-desarrolloglobal.pe/2021/07/Edited_20210730_095455.jpg" alt="image" className="w-full" />
+              <img
+                src="https://s3-us-west-2.amazonaws.com/uploads-desarrolloglobal.pe/2021/07/Edited_20210730_095455.jpg"
+                alt="image"
+                className="w-full"
+              />
               <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
                 <h3>
                   <a
@@ -53,7 +57,11 @@ export const Cursos = () => {
           </div>
           <div className="w-full md:w-1/2 xl:w-1/3 px-4">
             <div className="bg-white rounded-lg overflow-hidden mb-10">
-              <img src="https://s3-us-west-2.amazonaws.com/uploads-desarrolloglobal.pe/2021/05/contrataciones-2.png" alt="image" className="w-full" />
+              <img
+                src="https://s3-us-west-2.amazonaws.com/uploads-desarrolloglobal.pe/2021/05/contrataciones-2.png"
+                alt="image"
+                className="w-full"
+              />
               <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
                 <h3>
                   <a
@@ -98,7 +106,11 @@ export const Cursos = () => {
           </div>
           <div className="w-full md:w-1/2 xl:w-1/3 px-4">
             <div className="bg-white rounded-lg overflow-hidden mb-10">
-              <img src="https://s3-us-west-2.amazonaws.com/uploads-desarrolloglobal.pe/2021/05/Invierte%20pe-2.png" alt="image" className="w-full" />
+              <img
+                src="https://s3-us-west-2.amazonaws.com/uploads-desarrolloglobal.pe/2021/05/Invierte%20pe-2.png"
+                alt="image"
+                className="w-full"
+              />
               <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
                 <h3>
                   <a
