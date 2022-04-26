@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Logo } from "../../../../../../components";
-
-export const SeminarioSlide = ({ className = "" }) => {
+import bannerSeminario from "../../../../../../assets/imgs/banner-seminario.png";
+export const SeminarioSlide = () => {
   return (
-    <div className={`flex bg-slate-200 dark:bg-dark dark:text-white rounded-tl-xl ${className}`}>
-      <div className="w-1/2 flex flex-col justify-between  rounded-full">
+    <div className="flex flex-col-reverse md:flex-row bg-slate-200 dark:bg-dark dark:text-white rounded-3xl">
+      <div className="w-full md:w-1/2 flex flex-col justify-between ">
         <Logo className="w-[170px] mx-10 mt-8" />
         <h2 className="my-4 font-bold ml-10">Contratos Colaborativos y el uso del BIM en el Marco de INVIERTE.PE</h2>
         <Link className="flex text-danger ml-10" to="/">
@@ -59,14 +59,14 @@ export const SeminarioSlide = ({ className = "" }) => {
             <p className="ml-3  text-sm">Eduardo Ulloa</p>
           </div>
         </div>
-        <div className="w-full py-4 self-end flex justify-center bg-primary rounded-bl-xl">
+        <div className="w-full py-4 self-end flex justify-center bg-primary rounded-b-3xl md:rounded-b-none md:rounded-bl-3xl">
           <span className="text-white font-extralight">Inicia 20 de Junio</span>
         </div>
       </div>
-      <div className="w-1/2 ">
+      <div className="w-full md:w-1/2 flex ">
         <img
-          className="object-cover object-bottom rounded-r-xl"
-          src="https://archivos-comunes.s3.amazonaws.com/2022/banner_seminario_contratos_colaborativos.png"
+          className="object-cover object-bottom rounded-t-3xl md:rounded-tl-none  md:rounded-r-3xl"
+          src={bannerSeminario}
           alt="seminarios"
         />
       </div>

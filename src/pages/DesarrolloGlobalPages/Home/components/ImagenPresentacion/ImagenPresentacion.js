@@ -33,7 +33,7 @@ export const ImagenPresentacion = () => {
 
       <div className="px-4  mx-auto max-w-[95%] xl:max-w-[85%]   flex z-20">
         <div className="py-10  lg:w-3/6 flex flex-col gap-4 text-white justify-evenly">
-          <h1 ref={TituloElement} className="-translate-y-32 opacity-0  flex flex-col  text-3xl sm:text-4xl xl:text-5xl  font-extrabold">
+          <h1 ref={TituloElement} className="-translate-y-32 opacity-0  flex flex-col  text-4xl xl:text-5xl  font-extrabold">
             <label className="">Capacitación para</label>
             <span className="p-4 bg-danger text-white">Funcionarios y Servidores</span>
             <label className="">Públicos</label>
@@ -49,7 +49,7 @@ export const ImagenPresentacion = () => {
             />
             <p className="text-2xl ml-4 font-semibold">Potencia tus Conocimientos y mejora tus oportunidades</p>
           </div>
-          <ButtonsSpanList ref={ButtonsElement} className="translate-y-32 opacity-0" />
+          <ButtonsSpanList ref={ButtonsElement} className="translate-y-32 opacity-0 hidden sm:flex" />
         </div>
         <div ref={ImagenDerechaElement} className="translate-x-32 opacity-0 hidden lg:flex flex-col justify-end items-end w-3/6 ">
           <img

@@ -45,12 +45,9 @@ export const SliderContainer = ({ children, initialOffsetX, className, contentWi
   );
 };
 
-export const SliderItem = ({ children, width }) => {
+export const SliderItem = ({ children }) => {
   return (
-    <div
-      className="inline-flex justify-center items-center mx-2 transition duration-200 hover:scale-105 hover:drop-shadow-md p-3 overflow-x-hidden "
-      style={{ width }}
-    >
+    <div className="w-48 sm:w-[40vw] md:w-[30vw] lg:w-[25vw] xl:w-[20vw] inline-flex justify-center items-center mx-2 transition duration-200 hover:scale-105 hover:drop-shadow-md p-3 overflow-x-hidden ">
       {children}
     </div>
   );

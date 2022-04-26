@@ -70,8 +70,13 @@ export const SeminariosSlides = () => {
         <div className="embla__container-seminarios ">
           {items.map((item, index) => (
             <div className="embla__slide-seminarios " key={index}>
-              <div className="embla__slide__inner" style={{ transform: `scale(${scaleValues[index]})` }}>
-                <SeminarioSlide className="embla__slide__img" />
+              <div
+                className="relative flex overflow-hidden origin-center h-[45rem] xs:h-[52rem]  sm:h-[60rem] md:h-96 lg:h-[32rem] xl:h-[490px] "
+                style={{ transform: `scale(${scaleValues[index]})` }}
+              >
+                <div className="embla__slide__img">
+                  <SeminarioSlide />
+                </div>
               </div>
             </div>
           ))}

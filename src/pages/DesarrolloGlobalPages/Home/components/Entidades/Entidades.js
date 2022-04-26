@@ -28,7 +28,7 @@ export const Entidades = () => {
 
   return (
     <Container>
-      <h1 className="text-4xl font-extrabold mb-7 leading-loose text-center">
+      <h1 className="text-3xl sm:text-4xl font-black sm:font-extrabold  leading-normal mb-7 sm:leading-loose text-center">
         Entidades que confían en <span className="text-primary dark:text-dark">Desarrollo Global</span>
       </h1>
       <div className="embla" ref={emblaRef}>

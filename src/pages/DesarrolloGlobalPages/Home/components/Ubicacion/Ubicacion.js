@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export const Ubicacion = () => {
   return (
     <Container className="xl:max-w-[85%]">
-      <h1 className="text-4xl font-extrabold mb-7 leading-loose text-center">
+      <h1 className="text-3xl sm:text-4xl font-black sm:font-extrabold mb-7 leading-normal sm:leading-loose text-center">
         Donde <span className="text-primary dark:text-sky-500">nos encuentras</span>
       </h1>
       <div className="flex flex-col md:flex-row gap-6 md:gap-0">
