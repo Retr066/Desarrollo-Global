@@ -10,6 +10,7 @@ export {
   Login,
   Legal,
   LibroReclamaciones,
+  Live,
 } from "./DesarrolloGlobalPages";
 
 //aula

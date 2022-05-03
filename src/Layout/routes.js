@@ -11,6 +11,7 @@ import {
   DiplomasAdmin,
   TabCursos,
   Aula,
+  Live,
 } from "../pages";
 
 export const routesHome = [
@@ -41,6 +42,10 @@ export const routesHome = [
   {
     path: "/libro-reclamaciones",
     Component: LibroReclamaciones,
+  },
+  {
+    path: "/live",
+    Component: Live,
   },
 ];
 

@@ -71,7 +71,7 @@ export const SliderCursos = () => {
   return (
     <>
       <h1 className="text-3xl sm:text-4xl font-black sm:font-extrabold  leading-normal sm:leading-loose text-center mb-7">
-        Explora nuestros <span className="text-primary dark:text-dark">Cursos y Diplomas</span> de Alta Especialización
+        Explora nuestros <span className="text-primary dark:text-sky-500 ">Cursos y Diplomas</span> de Alta Especialización
       </h1>
       <SliderContainer className="" contentWidth={100000} initialOffsetX={0} direction="right">
         {cursos.map((curso, index) => (

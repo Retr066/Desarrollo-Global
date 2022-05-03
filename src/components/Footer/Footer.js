@@ -4,7 +4,7 @@ export const Footer = () => {
   const year = currentTime.getFullYear();
 
   return (
-    <footer className="p-4 sm:p-6  sm:px-16">
+    <footer className="p-4 sm:pt-10 sm:p-6  sm:px-16 ">
       <div className="lg:flex lg:justify-between">
         <Logos />
         <Accesos />

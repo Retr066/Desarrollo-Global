@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export const Ubicacion = () => {
   return (
-    <Container className="xl:max-w-[85%]">
+    <Container classNameContent="bg-slate-100 dark:bg-secondary-dark" className="xl:max-w-[85%] pb-0  ">
       <h1 className="text-3xl sm:text-4xl font-black sm:font-extrabold mb-7 leading-normal sm:leading-loose text-center">
         Donde <span className="text-primary dark:text-sky-500">nos encuentras</span>
       </h1>
@@ -23,7 +23,7 @@ export const Ubicacion = () => {
             <p>Consulta con atención al alumno el estado de tus notas y envio de certificados.</p>
             <p>
               (*) Al hacer clic aceptas nuestra política de{" "}
-              <Link className="text-primary underline" to="/legal/terminos-servicio">
+              <Link className="text-primary dark:text-sky-500 underline" to="/legal/terminos-servicio">
                 tratamiento de datos personales.
               </Link>
             </p>

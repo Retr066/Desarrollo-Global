@@ -19,6 +19,7 @@ module.exports = {
         },
         secondary: {
           DEFAULT: "#1C365E",
+          dark: "#142a4b",
         },
         white: {
           DEFAULT: "#FFFFFA",
@@ -32,5 +33,10 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  variants: {
+    extend: {
+      scrollbar: ["dark"],
+    },
+  },
+  plugins: [require("tailwind-scrollbar")],
 };

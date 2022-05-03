@@ -8,3 +8,4 @@ export { NotFound } from "./NotFound";
 export { Login } from "./Login";
 export { Legal } from "./Legal";
 export { LibroReclamaciones } from "./LibroReclamaciones";
+export { Live } from "./Live";

@@ -3,11 +3,10 @@ import { SeminarioSlide } from "./SeminarioSlide";
 import "../styles/embla.css";
 import { useCallback, useEffect, useState } from "react";
 import { NextButton, PrevButton } from "./SeminariosCarruselButton";
+import { Container } from "../../../../../../Container";
 export const SeminariosSlides = () => {
-  //carousel embla no scroll
-
   const [viewportRef, embla] = useEmblaCarousel({ loop: false, skipSnaps: false, dragFree: false, draggable: false });
-  const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const seminarios = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   const SCALE_FACTOR = 3;
 
   const numberWithinRange = (number, min, max) => Math.min(Math.max(number, min), max);
@@ -65,28 +64,28 @@ export const SeminariosSlides = () => {
   useEffect(() => {}, [embla]);
 
   return (
-    <div className="relative max-w-5xl">
+    <div className="relative mx-auto  max-w-full sm:max-w-[95%] xl:max-w-[1000px]  ">
       <div className="embla__viewport" ref={viewportRef}>
-        <div className="embla__container-seminarios ">
-          {items.map((item, index) => (
-            <div className="embla__slide-seminarios " key={index}>
+        <div className="embla__container-seminarios">
+          {seminarios.map((seminario, index) => (
+            <div className="embla__slide-seminarios" key={index}>
               <div
-                className="relative flex overflow-hidden origin-center h-[45rem] xs:h-[52rem]  sm:h-[60rem] md:h-96 lg:h-[32rem] xl:h-[490px] "
+                className="relative flex overflow-hidden origin-center h-[45rem] xs:h-[52rem]  sm:h-[58rem] md:h-[26rem] lg:h-[32rem] xl:h-[30rem] "
                 style={{ transform: `scale(${scaleValues[index]})` }}
               >
                 <div className="embla__slide__img">
-                  <SeminarioSlide />
+                  <SeminarioSlide {...seminario} />
                 </div>
               </div>
             </div>
           ))}
         </div>
       </div>
-      <div className="flex items-center  justify-center w-full mt-10 ">
+      <div className="flex items-center  justify-center w-full mt-4 ">
         <div className="flex items-center ">
           <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} aria-label="Atrás" />
           <p className="w-40 font-gil text-14 leading-18 tracking-4 flex items-center justify-center text-center ">
-            <span className="font-bold mr-1">{posicionActualSlide}</span>/ {items.length}
+            <span className="font-bold mr-1">{posicionActualSlide}</span>/ {seminarios.length}
           </p>
           <NextButton onClick={scrollNext} enabled={nextBtnEnabled} aria-label="Siguiente" />
         </div>
