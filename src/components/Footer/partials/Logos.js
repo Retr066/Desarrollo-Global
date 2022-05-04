@@ -9,7 +9,7 @@ export const Logos = () => {
         <Logo tipo="link" style={{ minWidth: "auto", height: "100%" }} className="max-w-[340px]" />
         <p className="text-center font-semibold">Capacitación para Funcionarios y Servidores Públicos</p>
       </div>
-      <LogoIso className="flex flex-col justify-center items-center " />
+      <LogoIso width="100px" className="flex flex-col justify-center items-center " />
     </div>
   );
 };

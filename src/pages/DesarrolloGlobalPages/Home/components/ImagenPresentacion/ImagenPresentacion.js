@@ -57,12 +57,7 @@ export const ImagenPresentacion = () => {
             src="https://s3-us-west-2.amazonaws.com/uploads-desarrolloglobal.pe/2022/03/Mesa-de-trabajo-%E2%80%93-2.png"
             alt="banner promoción"
           />
-          <LogoIso
-            style={{
-              width: "240px",
-            }}
-            className="flex flex-col items-end text-white text-xs"
-          />
+          <LogoIso className="flex flex-col items-end text-white text-xs" />
         </div>
       </div>
     </section>

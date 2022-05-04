@@ -1,63 +1,32 @@
-import React, { useRef, useState } from "react";
+import { useRef } from "react";
 import Picker, { SKIN_TONE_NEUTRAL } from "emoji-picker-react";
 import { emmojiPickerEs } from "./utils";
-import { typesActionReducers } from "../../../../../../types";
+import { useChat } from "./hooks";
+import { MensajeError } from "../../../../../../components";
 
-export const InputSendChat = ({ dispatch }) => {
-  const [chosenEmoji, setChosenEmoji] = useState("");
-  const [showEmoji, setShowEmoji] = useState(false);
+export const InputSendChat = ({ dispatch, openTab }) => {
   const inputRef = useRef(null);
-
-  const setCursorToEnd = (element) => {
-    var range = document.createRange();
-    var sel = window.getSelection();
-    range.setStart(element, 1);
-    range.collapse(true);
-    sel.removeAllRanges();
-    sel.addRange(range);
-    element.focus();
-  };
-
-  const onEmojiClick = (_, emojiObject) => {
-    inputRef.current.textContent += emojiObject.emoji;
-    setChosenEmoji((prev) => {
-      return `${prev}${emojiObject.emoji}`;
-    });
-    setShowEmoji(false);
-    const { current: element } = inputRef;
-    setCursorToEnd(element);
-  };
-
-  const handleKeyDown = (event) => {
-    if (event.key === "Enter" && !event.shiftKey) {
-      event.preventDefault();
-
-      dispatch({
-        type: typesActionReducers.ADD_MESSAGE,
-        payload: {
-          id: Date.now(),
-          img: "https://i.pravatar.cc/100",
-          nombre: "Juan",
-          tiempo: "Hace 14 min",
-          mensaje: chosenEmoji,
-        },
-      });
-      setChosenEmoji("");
-      inputRef.current.textContent = "";
-    }
-  };
+  const { onEmojiClick, handleKeyDown, handleChatInputChange, handlePasteContent, setShowEmoji, showEmoji, showMessageError } = useChat({
+    dispatch,
+    inputRef,
+  });
 
   return (
-    <>
+    <div className={openTab === 1 ? "relative w-full" : "hidden"}>
+      {showMessageError && <MensajeError mensaje="Alcanzó el límite de caracteres de 300" />}
       <div
         ref={inputRef}
         contentEditable="true"
         placeholder="¡Escribe tu comentario o pregunta!"
         spellCheck="false"
         onKeyDown={handleKeyDown}
-        onInput={(event) => setChosenEmoji(event.target.innerText)}
+        onInput={handleChatInputChange}
         suppressContentEditableWarning={true}
-        className="empty:before:content-[attr(placeholder)] empty:focus:before:content-['']   live-scroll block overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 dark:scrollbar-thumb-gray-900 scrollbar-track-transparent  w-full border rounded-xl focus:outline-none focus:border-indigo-300 pl-4 py-2 max-h-[120px]  min-h-[32px] will-change-[height] select-text break-words pr-10  resize-none"
+        onPaste={handlePasteContent}
+        className={`border ${
+          showMessageError && "border-danger focus:border-danger"
+        } empty:before:content-[attr(placeholder)] empty:focus:before:content-['']  live-scroll block overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 dark:scrollbar-thumb-gray-900 scrollbar-track-transparent 
+         w-full  rounded-xl focus:outline-none focus:border-indigo-300 pl-4 py-2 max-h-[120px]  min-h-[32px] will-change-[height] select-text break-words pr-10  resize-none`}
       />
       <button
         onClick={() => setShowEmoji((prev) => !prev)}
@@ -81,6 +50,6 @@ export const InputSendChat = ({ dispatch }) => {
           pickerStyle={{ width: "100%" }}
         />
       )}
-    </>
+    </div>
   );
 };

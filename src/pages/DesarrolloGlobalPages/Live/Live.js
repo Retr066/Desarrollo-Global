@@ -1,4 +1,3 @@
-import "./styles/scroll.css";
 import Plyr from "plyr-react";
 import "plyr-react/dist/plyr.css";
 import { useRef } from "react";

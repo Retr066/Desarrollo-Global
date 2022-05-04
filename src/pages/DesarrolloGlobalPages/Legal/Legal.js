@@ -38,7 +38,7 @@ export const Legal = () => {
   const handleDesactivate = () => setSidebar(!sidebar);
 
   return (
-    <Container className="min-h-screen">
+    <Container className="min-h-screen pt-5">
       <div className="font-nanito grid grid-cols-8 pt-7">
         <button className="lg:hidden col-span-8 flex text-center text-gray-400 font-extrabold text-lg" onClick={handleDesactivate}>
           <AbrirIcon /> <h1 className="ml-[15px]">Regresar</h1>

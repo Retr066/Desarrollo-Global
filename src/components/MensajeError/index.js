@@ -1,0 +1,1 @@
+export { MensajeError } from "./MensajeError";

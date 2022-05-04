@@ -4,5 +4,10 @@
 @tailwind utilities;
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.live-scroll::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-clip: content-box;
 }

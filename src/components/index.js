@@ -10,3 +10,4 @@ export { BannerAnuncio } from "./BannerAnuncio";
 export { ButtonClose } from "./buttons";
 export { LogoIso } from "./LogoIso";
 export { SliderContainer } from "./SliderContainer";
+export { MensajeError } from "./MensajeError";
