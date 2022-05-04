@@ -22,10 +22,12 @@ export const Chat = () => {
         }
         id="descripcion"
       >
-        <p className="text-2xl font-black text-center ">
+        <p className="text-2xl font-black text-center lg:mb-5">
           Seminario en <span className="text-danger">Vivo</span>
         </p>
-        <p className="mb-5 text-lg font-bold">Cómo vender al Estado a través de los Catálogos Electrónicos de Acuerdos Marco</p>
+        <p className="block lg:hidden text-lg font-bold mb-5">
+          Cómo vender al Estado a través de los Catálogos Electrónicos de Acuerdos Marco
+        </p>
         <p className="text-xl font-bold">Sobre el docente</p>
         <div className="flex items-center mr-10">
           <img

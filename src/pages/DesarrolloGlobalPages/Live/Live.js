@@ -26,7 +26,7 @@ export const Live = () => {
 
   return (
     <div className="flex flex-col lg:flex-row  h-[calc(100vh_-_5.2rem)]">
-      <div className="live-scroll w-full lg:w-3/4 h-full flex flex-col overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 dark:scrollbar-thumb-gray-900 scrollbar-track-transparent ">
+      <div className="live-scroll w-full lg:w-3/4 h-auto flex flex-col overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 dark:scrollbar-thumb-gray-900 scrollbar-track-transparent ">
         {/* <ReactPlayer url="https://www.youtube.com/watch?v=_zr-ZA9HXts" width="100%" height="85%" controls={true} config={config} /> */}
         <Plyr
           ref={reactPlayerRef}
@@ -40,7 +40,7 @@ export const Live = () => {
             },
           }}
         />
-        <section className="hidden xl:block h-1/5 container mx-auto px-4 py-2">
+        <section className="hidden lg:block h-1/5 container mx-auto px-4 py-2">
           <h1 className="text-2xl font-bold mb-2">Cómo vender al Estado a través de los Catálogos Electrónicos de Acuerdos Marco</h1>
           <div className="flex items-center justify-between overflow-hidden">
             <div className="flex items-center mr-10">
