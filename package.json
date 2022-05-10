@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@heroicons/react": "^1.0.6",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
@@ -10,6 +11,7 @@
     "embla-carousel-react": "^6.2.0",
     "emoji-picker-react": "^3.5.1",
     "gsap": "^3.10.3",
+    "moment": "^2.29.3",
     "plyr-react": "^4.0.0-alpha.5",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -20,6 +22,7 @@
     "stream-chat": "^6.5.1",
     "stream-chat-react": "^8.1.2",
     "styled-components": "^5.3.5",
+    "tw-elements": "^1.0.0-alpha12",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

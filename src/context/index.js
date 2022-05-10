@@ -1,3 +1,3 @@
 export { ColorModeContext } from "./ColorModeContext";
-export { ModalLoginContext } from "./ModalLoginContext";
+export { LayoutHomeContext } from "./LayoutHomeContext";
 export { SizeContext } from "./SizeObserver";

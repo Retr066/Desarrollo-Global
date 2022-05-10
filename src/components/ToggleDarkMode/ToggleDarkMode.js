@@ -7,7 +7,7 @@ export const ToggleDarkMode = () => {
   return (
     <button
       type="button"
-      className="w-10 h-4 mx-2 rounded-full  bg-primary dark:bg-dark flex items-center transition duration-300 focus:outline-none shadow"
+      className="w-10 h-4  rounded-full  bg-primary dark:bg-dark flex items-center transition duration-300 focus:outline-none shadow"
       onClick={toggleDarkMode}
     >
       <div

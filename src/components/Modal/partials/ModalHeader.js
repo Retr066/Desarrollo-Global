@@ -1,10 +1,10 @@
 export const ModalHeader = ({ titulo }) => {
   return (
-    <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
+    <div className="flex items-start justify-between p-5 border-b border-solid rounded-t border-slate-200">
       <h3 className="text-3xl font-semibold">{titulo}</h3>
-      {/* <button className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none">
-        <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">X</span>
-      </button> */}
+      <button className="float-right p-1 ml-auto text-3xl font-semibold leading-none text-black bg-transparent border-0 outline-none opacity-5 focus:outline-none">
+        <span className="block w-6 h-6 text-2xl text-black bg-transparent outline-none opacity-5 focus:outline-none">X</span>
+      </button>
     </div>
   );
 };

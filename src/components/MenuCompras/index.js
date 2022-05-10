@@ -1,0 +1,1 @@
+export { MenuCompras } from "./MenuCompras";

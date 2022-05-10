@@ -9,7 +9,7 @@ export const useBanner = () => {
 
   const cerrarBanner = async () => {
     await delayedAnimacion(0, () => setIsAnimacionReady(false));
-    await delayedAnimacion(200, () => setIsShow(false));
+    await delayedAnimacion(300, () => setIsShow(false));
     await delayedAnimacion(0, () => setBannerVisible(false));
   };
 

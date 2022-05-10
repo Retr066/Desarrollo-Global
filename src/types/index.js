@@ -1,3 +1,7 @@
 export const typesActionReducers = {
   ADD_MESSAGE: "[Chat] ADD_MESSAGE",
+
+  AGREGAR_AL_CARRITO: "[Carrito] AGREGAR_AL_CARRITO",
+  REMOVER_DEL_CARRITO: "[Carrito] REMOVER_DEL_CARRITO",
+  LIMPIAR_CARRITO: "[Carrito] LIMPIAR_CARRITO",
 };

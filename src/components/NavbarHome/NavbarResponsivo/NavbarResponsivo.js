@@ -26,8 +26,8 @@ export const NavbarResponsivo = ({ navShow, links, toggleMenuResponsive }) => {
 
       <aside
         className={`${
-          navShow ? "-translate-x-[110%]" : "translate-x-[0%]"
-        } transition ease-out inset-0  duration-150 fixed w-full sm:max-w-[380px] xl:hidden h-screen bg-white dark:bg-secondary z-[51]`}
+          navShow ? "-translate-x-[120%]" : "translate-x-[0%]"
+        } transition ease-out inset-0  duration-300 fixed w-full sm:max-w-[380px] xl:hidden h-screen bg-white dark:bg-secondary z-[51]`}
         aria-label="Sidebar"
       >
         <div className=" py-4 px-3 rounded flex flex-col h-full">

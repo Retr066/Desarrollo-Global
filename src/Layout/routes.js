@@ -12,6 +12,7 @@ import {
   TabCursos,
   Aula,
   Live,
+  Curso,
 } from "../pages";
 
 export const routesHome = [
@@ -22,6 +23,10 @@ export const routesHome = [
   {
     path: "/cursos",
     Component: Cursos,
+  },
+  {
+    path: "/cursos/:slug",
+    Component: Curso,
   },
   {
     path: "/diplomas",

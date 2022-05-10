@@ -2,6 +2,7 @@
 export {
   DesarrolloGlobal,
   Cursos,
+  Curso,
   Diplomas,
   Diplomados,
   Inhouse,

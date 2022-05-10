@@ -4,12 +4,12 @@ import { ButtonPrimary } from "../../buttons";
 import { NavbarResponsivo } from "../NavbarResponsivo";
 import { ToggleDarkMode } from "../../ToggleDarkMode";
 import { links } from "../data";
-import { NavListItem, CarritoDeCompras, SpanMenu } from "./partials";
-import { ModalLoginContext } from "../../../context";
+import { NavListItem, CarritoDeCompras, SpanMenu, CarritoDeComprasV2 } from "./partials";
+import { LayoutHomeContext } from "../../../context";
 import { Logo } from "../../Logo";
 
-export const NavbarHome = () => {
-  const { toggleVerModal } = useContext(ModalLoginContext);
+export const NavbarHome = ({ className }) => {
+  const { toggleVerModal, toggleMenuCompras } = useContext(LayoutHomeContext);
   const [navShow, setNavShow] = useState(true);
   const toggleMenuResponsive = useCallback(() => {
     setNavShow(!navShow);
@@ -17,7 +17,7 @@ export const NavbarHome = () => {
 
   return (
     <>
-      <div className={`bg-transparent shadow  sticky top-0 left-0 right-0 z-30 w-full backdrop-blur-[20px]`}>
+      <div className={`${className ? className : "sticky"}  bg-transparent shadow  top-0 left-0 right-0 z-30 w-full backdrop-blur-[20px]`}>
         <div className="container mx-auto px-4">
           <nav className="flex items-center justify-between py-4">
             <div className="flex items-center">
@@ -28,17 +28,15 @@ export const NavbarHome = () => {
               </div>
             </div>
 
-            <div className="hidden md:flex md:items-center">
+            <div className="hidden md:flex md:items-center gap-4">
               <Buscador />
-              <CarritoDeCompras />
+              <CarritoDeComprasV2 toggleMenuCompras={toggleMenuCompras} />
               <ToggleDarkMode />
-              <ButtonPrimary className="ml-2" onClick={toggleVerModal}>
-                Inicia sesión
-              </ButtonPrimary>
+              <ButtonPrimary onClick={toggleVerModal}>Inicia sesión</ButtonPrimary>
             </div>
 
-            <div className="flex items-center md:hidden">
-              <CarritoDeCompras />
+            <div className="flex items-center md:hidden gap-2">
+              <CarritoDeComprasV2 toggleMenuCompras={toggleMenuCompras} />
               <ButtonPrimary onClick={toggleVerModal}>Entrar</ButtonPrimary>
             </div>
           </nav>

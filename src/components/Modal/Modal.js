@@ -25,7 +25,7 @@ export const Modal = ({ children, verModal, toggleVerModal, className = "max-w-4
       >
         <div
           className={`${verModal ? "translate-y-[0%] opacity-1" : "-translate-y-[50%] opacity-0"}
-           delay-75 transition ease-linear  duration-200  relative w-auto my-6 mx-auto ${className}`}
+           delay-75 transition ease-linear  duration-300  relative w-auto my-6 mx-auto ${className}`}
         >
           <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white dark:bg-secondary outline-none focus:outline-none">
             <ButtonClose className="md:hidden" onClick={toggleVerModal} />

@@ -1,5 +1,6 @@
 export { DesarrolloGlobal } from "./Home";
 export { Cursos } from "./Cursos";
+export { Curso } from "./Curso";
 export { Diplomas } from "./Diplomas";
 export { Diplomados } from "./Diplomados";
 export { Inhouse } from "./Inhouse";

@@ -10,7 +10,7 @@ export const BannerAnuncio = () => {
         <section
           className={` ${
             isAnimacionReady ? "-translate-y-[0%]" : "-translate-y-[100%]"
-          }  transition ease-linear  duration-200  w-full bg-danger  text-white`}
+          }  transition ease-linear  duration-300  w-full bg-danger  text-white`}
         >
           <div className="container mx-auto px-4 py-2">
             <BannerInformacion />

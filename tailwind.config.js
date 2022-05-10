@@ -1,10 +1,12 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./node_modules/tw-elements/dist/js/**/*.js"],
   darkMode: "class",
   theme: {
     fontFamily: {
-      nanito: ["Nunito", "sans-serif"],
+      sans: ["Nunito", "sans-serif"],
+      body: ["Nunito", "sans-serif"],
+      mono: ["ui-monospace", "monospace"],
     },
     extend: {
       screens: {
@@ -38,5 +40,5 @@ module.exports = {
       scrollbar: ["dark"],
     },
   },
-  plugins: [require("tailwind-scrollbar")],
+  plugins: [require("tailwind-scrollbar"), require("tw-elements/dist/plugin")],
 };
