@@ -1,0 +1,1 @@
+export { PresentacionCurso } from "./PresentacionCurso";

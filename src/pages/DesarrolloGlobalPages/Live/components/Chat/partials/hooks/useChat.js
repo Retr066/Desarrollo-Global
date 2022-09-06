@@ -30,7 +30,6 @@ export const useChat = ({ dispatch, inputRef }) => {
     if (event.key === "Enter" && !event.shiftKey) {
       event.preventDefault();
       if (validateMessage()) return;
-      console.log(chosenEmoji);
       dispatch({
         type: typesActionReducers.ADD_MESSAGE,
         payload: {

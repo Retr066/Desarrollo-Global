@@ -1,0 +1,1 @@
+export { ComoPagar } from "./ComoPagar";

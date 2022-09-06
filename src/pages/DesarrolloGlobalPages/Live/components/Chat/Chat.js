@@ -8,7 +8,7 @@ export const Chat = () => {
   const [state, dispatch] = useReducer(ChatReducer, initialState);
   const { messages } = state;
   return (
-    <div className="flex flex-col flex-auto flex-shrink-0  border-none xl:border-l-2  h-full p-2">
+    <div className="flex flex-col flex-auto flex-shrink-0 h-full p-2 border-none xl:border-l-2">
       <Tabs openTab={openTab} setOpenTab={setOpenTab} />
       {/* Tab numero 1 */}
       <MessageList openTab={openTab} messages={messages} />

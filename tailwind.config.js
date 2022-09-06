@@ -40,5 +40,5 @@ module.exports = {
       scrollbar: ["dark"],
     },
   },
-  plugins: [require("tailwind-scrollbar"), require("tw-elements/dist/plugin")],
+  plugins: [require("tailwind-scrollbar"), require("tw-elements/dist/plugin"), require("@tailwindcss/line-clamp")],
 };

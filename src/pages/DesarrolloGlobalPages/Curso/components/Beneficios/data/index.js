@@ -1,0 +1,1 @@
+export { beneficios } from "./beneficios";

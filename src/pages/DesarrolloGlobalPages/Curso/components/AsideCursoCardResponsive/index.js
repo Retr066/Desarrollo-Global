@@ -1,0 +1,1 @@
+export { AsideCursoCardResponsive } from "./AsideCursoCardResponsive";

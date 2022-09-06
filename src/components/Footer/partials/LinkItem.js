@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 export const LinkItem = ({ href, to, nombre }) => {
   if (href) {
     return (
@@ -12,9 +10,9 @@ export const LinkItem = ({ href, to, nombre }) => {
   }
   return (
     <li className="mb-4">
-      <Link to={to} className="hover:underline">
+      <a href={to} className="hover:underline">
         {nombre}
-      </Link>
+      </a>
     </li>
   );
 };

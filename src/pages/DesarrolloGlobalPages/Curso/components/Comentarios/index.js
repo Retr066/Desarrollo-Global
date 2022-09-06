@@ -1,0 +1,1 @@
+export { Comentarios } from "./Comentarios";

@@ -1,5 +1,3 @@
-import React from "react";
-
 export const SinComentarios = () => {
   return (
     <div className="flex flex-col  h-full items-center justify-center gap-2">

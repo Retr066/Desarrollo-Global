@@ -3,7 +3,7 @@ import { SeminarioSlide } from "./SeminarioSlide";
 import "../styles/embla.css";
 import { useCallback, useEffect, useState } from "react";
 import { NextButton, PrevButton } from "./SeminariosCarruselButton";
-import { Container } from "../../../../../../Container";
+
 export const SeminariosSlides = () => {
   const [viewportRef, embla] = useEmblaCarousel({ loop: false, skipSnaps: false, dragFree: false, draggable: false });
   const seminarios = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];

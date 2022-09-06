@@ -1,1 +1,14 @@
 export { Temario } from "./Temario";
+export { VideoTrailer } from "./VideoTrailer";
+export { PresentacionCurso } from "./PresentacionCurso";
+export { CabezeraCurso } from "./CabezeraCurso";
+export { AsideCursoCard } from "./AsideCursoCard";
+export { CalidadGarantizadaIso } from "./CalidadGarantizadaIso";
+export { Beneficios } from "./Beneficios";
+export { Certificacion } from "./Certificacion";
+export { Horarios } from "./Horarios";
+export { Inversion } from "./Inversion";
+export { Asesores } from "./Asesores";
+export { Comentarios } from "./Comentarios";
+export { ComoPagar } from "./ComoPagar";
+export { AsideCursoCardResponsive } from "./AsideCursoCardResponsive";

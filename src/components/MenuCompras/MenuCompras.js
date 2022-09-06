@@ -31,7 +31,7 @@ export const MenuCompras = () => {
         <div
           onClick={switchBackground}
           ref={menuComprasElement}
-          className="bg-[rgba(0,0,0,.35)] inset-0 w-full h-screen fixed right-0 z-[100]"
+          className="bg-[rgba(0,0,0,.35)] inset-0 w-full h-screen fixed right-0 z-[100] backdrop-blur-[4px]"
         ></div>
       )}
 

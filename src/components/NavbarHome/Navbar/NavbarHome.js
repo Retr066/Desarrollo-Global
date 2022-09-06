@@ -4,7 +4,7 @@ import { ButtonPrimary } from "../../buttons";
 import { NavbarResponsivo } from "../NavbarResponsivo";
 import { ToggleDarkMode } from "../../ToggleDarkMode";
 import { links } from "../data";
-import { NavListItem, CarritoDeCompras, SpanMenu, CarritoDeComprasV2 } from "./partials";
+import { NavListItem, SpanMenu, CarritoDeComprasV2 } from "./partials";
 import { LayoutHomeContext } from "../../../context";
 import { Logo } from "../../Logo";
 

@@ -2,7 +2,8 @@ export const cursos = [
   {
     id: 1,
     titulo: "Elaboracion de instrumentos de Gestion Pei y Poi",
-    descripcion: "Elaboracion de instrumentos de Gestion Pei y Poi y Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+    descripcion:
+      "Al finalizar el curso de especialización, el participante será capaz de redactar documentos administrativos en la gestión pública, considerando aspectos de estilo, estructura textual y con corrección ortográfica.",
     image: "https://s3-us-west-2.amazonaws.com/uploads-desarrolloglobal.pe/2021/07/Edited_20210730_095455.jpg",
     slug: "elaboracion-instrumentos-gestion-pia-poi-pei",
     certificacion: "Certificación Universitaria",
@@ -14,11 +15,44 @@ export const cursos = [
     precioSinDescuento: 630,
     fechaInicio: "2020-07-01",
     fechaFin: "2020-07-31",
+    sesiones: [
+      {
+        id: 1,
+        titulo: "Sesion 01",
+        descripcion: "Descripcion de la sesion 01",
+        objetivos: ["Objetivo 1", "Objetivo 2", "Objetivo 3", "Objetivo 4"],
+      },
+      {
+        id: 2,
+        titulo: "Sesion 02",
+        descripcion: "Descripcion de la sesion 02",
+        objetivos: ["Objetivo 1", "Objetivo 2", "Objetivo 3", "Objetivo 4"],
+      },
+      {
+        id: 3,
+        titulo: "Sesion 03",
+        descripcion: "Descripcion de la sesion 03",
+        objetivos: ["Objetivo 1", "Objetivo 2", "Objetivo 3", "Objetivo 4"],
+      },
+      {
+        id: 4,
+        titulo: "Sesion 04",
+        descripcion: "Descripcion de la sesion 05",
+        objetivos: ["Objetivo 1", "Objetivo 2", "Objetivo 3", "Objetivo 4"],
+      },
+      {
+        id: 5,
+        titulo: "Sesion 05",
+        descripcion: "Descripcion de la sesion 05",
+        objetivos: ["Objetivo 1", "Objetivo 2", "Objetivo 3", "Objetivo 4"],
+      },
+    ],
   },
   {
     id: 2,
     titulo: "50+ Best creative website themes & templates",
-    descripcion: "50+ Best creative website themes & templates and Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+    descripcion:
+      "50+ Best creative website themes & templates and Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elaboracion de instrumentos de Gestion Pei y Poi y Lorem ipsum dolor sit amet, consectetur adipiscing elit.Elaboracion de instrumentos de Gestion Pei y Poi y Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image: "https://s3-us-west-2.amazonaws.com/uploads-desarrolloglobal.pe/2021/05/contrataciones-2.png",
     slug: "contrataciones-estado",
     certificacion: "Certificación Universitaria",
@@ -30,11 +64,44 @@ export const cursos = [
     precioSinDescuento: 730,
     fechaInicio: "2020-07-10",
     fechaFin: "2020-07-31",
+    sesiones: [
+      {
+        id: 1,
+        titulo: "Sesion 01",
+        descripcion: "Descripcion de la sesion 01",
+        objetivos: ["Objetivo 1", "Objetivo 2", "Objetivo 3", "Objetivo 4"],
+      },
+      {
+        id: 2,
+        titulo: "Sesion 02",
+        descripcion: "Descripcion de la sesion 02",
+        objetivos: ["Objetivo 1", "Objetivo 2", "Objetivo 3", "Objetivo 4"],
+      },
+      {
+        id: 3,
+        titulo: "Sesion 03",
+        descripcion: "Descripcion de la sesion 03",
+        objetivos: ["Objetivo 1", "Objetivo 2", "Objetivo 3", "Objetivo 4"],
+      },
+      {
+        id: 4,
+        titulo: "Sesion 04",
+        descripcion: "Descripcion de la sesion 05",
+        objetivos: ["Objetivo 1", "Objetivo 2", "Objetivo 3", "Objetivo 4"],
+      },
+      {
+        id: 5,
+        titulo: "Sesion 05",
+        descripcion: "Descripcion de la sesion 05",
+        objetivos: ["Objetivo 1", "Objetivo 2", "Objetivo 3", "Objetivo 4"],
+      },
+    ],
   },
   {
     id: 3,
     titulo: "50+ Best creative website themes & templates",
-    descripcion: "50+ Best creative website themes & templates and Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+    descripcion:
+      "50+ Best creative website themes & templates and Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elaboracion de instrumentos de Gestion Pei y Poi y Lorem ipsum dolor sit amet, consectetur adipiscing elit.Elaboracion de instrumentos de Gestion Pei y Poi y Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image: "https://s3-us-west-2.amazonaws.com/uploads-desarrolloglobal.pe/2021/05/Invierte%20pe-2.png",
     slug: "invierte-peru",
     certificacion: "Certificación Universitaria",
@@ -46,5 +113,37 @@ export const cursos = [
     precioSinDescuento: 530,
     fechaInicio: "2020-07-22",
     fechaFin: "2020-07-31",
+    sesiones: [
+      {
+        id: 1,
+        titulo: "Sesion 01",
+        descripcion: "Descripcion de la sesion 01",
+        objetivos: ["Objetivo 1", "Objetivo 2", "Objetivo 3", "Objetivo 4"],
+      },
+      {
+        id: 2,
+        titulo: "Sesion 02",
+        descripcion: "Descripcion de la sesion 02",
+        objetivos: ["Objetivo 1", "Objetivo 2", "Objetivo 3", "Objetivo 4"],
+      },
+      {
+        id: 3,
+        titulo: "Sesion 03",
+        descripcion: "Descripcion de la sesion 03",
+        objetivos: ["Objetivo 1", "Objetivo 2", "Objetivo 3", "Objetivo 4"],
+      },
+      {
+        id: 4,
+        titulo: "Sesion 04",
+        descripcion: "Descripcion de la sesion 05",
+        objetivos: ["Objetivo 1", "Objetivo 2", "Objetivo 3", "Objetivo 4"],
+      },
+      {
+        id: 5,
+        titulo: "Sesion 05",
+        descripcion: "Descripcion de la sesion 05",
+        objetivos: ["Objetivo 1", "Objetivo 2", "Objetivo 3", "Objetivo 4"],
+      },
+    ],
   },
 ];

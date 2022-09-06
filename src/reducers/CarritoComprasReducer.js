@@ -6,7 +6,7 @@ export const INITIAL_STATE = {
   loading: false,
   error: null,
 };
-//saber cuando el producto ya esta agregado en el carrito
+
 
 export const CarritoComprasReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {

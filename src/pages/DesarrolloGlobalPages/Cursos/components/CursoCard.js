@@ -1,7 +1,7 @@
 import moment from "moment";
 import { Link } from "react-router-dom";
 import { ShoppingCartIcon, CalendarIcon, StatusOnlineIcon, StatusOfflineIcon, CheckIcon } from "@heroicons/react/outline";
-import { IconCertificado } from "../../../../assets/svgs/IconsSocialMedia";
+import { IconCertificado } from "../../../../assets/svgs";
 import { SpanEspecializacion, SpanEstado } from "../styles-components";
 import { typesActionReducers } from "../../../../types";
 import { LayoutHomeContext } from "../../../../context";
@@ -77,10 +77,10 @@ export const CursoCard = ({
             {estado}
           </SpanEstado>
 
-          <img src={image} alt={titulo} className="w-full" />
+          <img src={image} alt={titulo} className="w-full transition duration-200 hover:scale-110" />
         </Link>
-        <div className="flex flex-col p-8 sm:p-9 md:p-7 xl:p-9 ">
-          <h3 className="mb-5 text-xl font-bold">{titulo}</h3>
+        <div className="flex flex-col p-4 sm:p-9 md:p-7 xl:p-5 ">
+          <h3 className="mb-5 text-xl font-bold line-clamp-2">{titulo}</h3>
           <div className="flex flex-col gap-2 mb-5">
             <div className="flex items-end">
               <CalendarIcon className="w-6 h-6" strokeWidth={1.5} /> <p className="ml-2 font-bold">Inicio:</p>
@@ -107,14 +107,14 @@ export const CursoCard = ({
             {estaEnCarrito ? (
               <button
                 onClick={removerDelCarrito}
-                className="p-2 pl-5 pr-5 text-lg transition-colors duration-200 bg-transparent border-2 rounded-lg  border-primary text-primary hover:bg-primary hover:text-gray-100 focus:border-4 focus:border-primary-light dark:text-white dark:border-white dark:bg-primary dark:hover:bg-primary-light dark:hover:text-gray-100"
+                className="p-2 pl-5 pr-5 text-lg transition-colors duration-200 bg-transparent border-2 rounded-lg border-primary text-primary hover:bg-primary hover:text-gray-100 focus:border-2 focus:border-primary-light dark:text-white dark:border-white dark:bg-primary dark:hover:bg-primary-light dark:hover:text-gray-100"
               >
                 <CheckIcon className="w-6 h-6" />
               </button>
             ) : (
               <button
                 onClick={agregarAlCarrito}
-                className="p-2 pl-5 pr-5 text-lg transition-colors duration-200 bg-transparent border-2 rounded-lg  border-primary text-primary hover:bg-primary hover:text-gray-100 focus:border-4 focus:border-primary-light dark:text-white dark:border-white dark:bg-primary dark:hover:bg-primary-light dark:hover:text-gray-100"
+                className="p-2 pl-5 pr-5 text-lg transition-colors duration-200 bg-transparent border-2 rounded-lg border-primary text-primary hover:bg-primary hover:text-gray-100 focus:border-2 focus:border-primary-light dark:text-white dark:border-white dark:bg-primary dark:hover:bg-primary-light dark:hover:text-gray-100"
               >
                 <ShoppingCartIcon className="w-6 h-6" />
               </button>

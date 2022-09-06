@@ -10,7 +10,7 @@ export const InputSendChat = ({ dispatch, openTab }) => {
     dispatch,
     inputRef,
   });
-
+  
   return (
     <div className={openTab === 1 ? "relative w-full" : "hidden"}>
       {showMessageError && <MensajeError mensaje="Alcanzó el límite de caracteres de 300" />}
@@ -24,13 +24,12 @@ export const InputSendChat = ({ dispatch, openTab }) => {
         suppressContentEditableWarning={true}
         onPaste={handlePasteContent}
         className={`border ${
-          showMessageError && "border-danger focus:border-danger"
-        } empty:before:content-[attr(placeholder)] empty:focus:before:content-['']  live-scroll block overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 dark:scrollbar-thumb-gray-900 scrollbar-track-transparent 
-         w-full  rounded-xl focus:outline-none focus:border-indigo-300 pl-4 py-2 max-h-[120px]  min-h-[32px] will-change-[height] select-text break-words pr-10  resize-none`}
+          showMessageError ? "border-danger focus:border-danger" : "border-indigo-300 focus:border-indigo-300"
+        } empty:before:content-[attr(placeholder)] empty:focus:before:content-[''] live-scroll block overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 dark:scrollbar-thumb-gray-900 scrollbar-track-transparent w-full  rounded-xl focus:outline-none pl-4 py-2 max-h-[120px]  min-h-[32px] will-change-[height] select-text break-words pr-10 resize-none`}
       />
       <button
         onClick={() => setShowEmoji((prev) => !prev)}
-        className="absolute flex items-center justify-center h-full w-12 right-0 top-0 text-gray-400 hover:text-gray-600"
+        className="absolute top-0 right-0 flex items-center justify-center w-12 h-full text-gray-400 hover:text-gray-600"
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path

@@ -12,12 +12,15 @@ export const NavItem = ({ to, nombre, href, className }) => {
           href={to}
           target="_blank"
           rel="noreferrer"
-          className={`${isHovering && "hover:text-black dark:hover:text-white"} font-bold  text-base`}
+          className={`${isHovering && "hover:text-black dark:hover:text-white"} font-bold transition-colors duration-150 text-base`}
         >
           {nombre}
         </a>
       ) : (
-        <NavLink className={`${isHovering && "hover:text-black dark:hover:text-white"} font-bold  text-base`} to={to}>
+        <NavLink
+          className={`${isHovering && "hover:text-black dark:hover:text-white"} font-bold transition-colors duration-150 text-base`}
+          to={to}
+        >
           {nombre}
         </NavLink>
       )}

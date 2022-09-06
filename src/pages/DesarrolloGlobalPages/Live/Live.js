@@ -25,7 +25,7 @@ export const Live = () => {
 
   return (
     <div className="flex flex-col lg:flex-row  h-[calc(100vh_-_5.2rem)]">
-      <div className="live-scroll w-full lg:w-3/4 h-auto flex flex-col overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 dark:scrollbar-thumb-gray-900 scrollbar-track-transparent ">
+      <div className="flex flex-col w-full h-auto overflow-y-auto live-scroll lg:w-3/4 scrollbar-thin scrollbar-thumb-gray-300 dark:scrollbar-thumb-gray-900 scrollbar-track-transparent ">
         {/* <ReactPlayer url="https://www.youtube.com/watch?v=_zr-ZA9HXts" width="100%" height="85%" controls={true} config={config} /> */}
         <Plyr
           ref={reactPlayerRef}
@@ -39,16 +39,16 @@ export const Live = () => {
             },
           }}
         />
-        <section className="hidden lg:block h-1/5 container mx-auto px-4 py-2">
-          <h1 className="text-2xl font-bold mb-2">Cómo vender al Estado a través de los Catálogos Electrónicos de Acuerdos Marco</h1>
+        <section className="container hidden px-4 py-2 mx-auto lg:block h-1/5">
+          <h1 className="mb-2 text-2xl font-bold">Cómo vender al Estado a través de los Catálogos Electrónicos de Acuerdos Marco</h1>
           <div className="flex items-center justify-between overflow-hidden">
             <div className="flex items-center mr-10">
               <img
-                className="inline-block h-12 w-12 m-2 rounded-full ring-2 ring-white"
+                className="inline-block w-12 h-12 m-2 rounded-full ring-2 ring-white"
                 src="https://www.desarrolloglobal.pe/public/files/PROFESORA-LORENA.png"
                 alt="Profesora Lórena"
               />
-              <div className="flex flex-col ">
+              <div className="flex flex-col">
                 <p className="text-lg font-bold">Expositor(a)</p>
                 <p className="text-base">Lorena Ruiz</p>
               </div>
@@ -59,7 +59,7 @@ export const Live = () => {
                 <div className="flex gap-2 mr-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
+                    className="w-6 h-6"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -76,7 +76,7 @@ export const Live = () => {
                 <div className="flex gap-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
+                    className="w-6 h-6"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -91,7 +91,7 @@ export const Live = () => {
           </div>
         </section>
       </div>
-      <aside className="w-full lg:w-1/4 h-full sticky overflow-hidden top-0 flex flex-col flex-auto ">
+      <aside className="sticky top-0 flex flex-col flex-auto w-full h-full overflow-hidden lg:w-1/4 ">
         <Chat />
       </aside>
     </div>

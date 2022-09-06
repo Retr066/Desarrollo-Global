@@ -1,0 +1,1 @@
+export { CalidadGarantizadaIso } from "./CalidadGarantizadaIso";

@@ -6,24 +6,23 @@ import { Link } from "react-router-dom";
 
 export const Ubicacion = () => {
   return (
-    <Container classNameContent="bg-slate-100 dark:bg-secondary-dark" className="xl:max-w-[85%] pb-0  ">
-      <h1 className="text-3xl sm:text-4xl font-black sm:font-extrabold mb-7 leading-normal sm:leading-loose text-center">
+    <Container classNameContent="bg-slate-100 dark:bg-secondary-dark" className="xl:max-w-[85%] pb-0">
+      <h1 className="text-3xl font-black leading-normal text-center sm:text-4xl sm:font-extrabold mb-7 sm:leading-loose">
         Donde <span className="text-primary dark:text-sky-500">nos encuentras</span>
       </h1>
-      <div className="flex flex-col md:flex-row gap-6 md:gap-0">
-        <div className="w-full md:w-1/2 flex">
+      <div className="flex flex-col gap-6 md:flex-row md:gap-0">
+        <div className="flex w-full md:w-1/2">
           <img className="hidden sm:flex md:hidden lg:flex h-full max-w-[300px] w-full" src={chicaMapa} alt="Chica mapa" />
           <div className="flex flex-col mx-4 justify-center gap-4 h-[300px] sm:h-auto">
-            <h3 className="font-bold text-xl">Si ya eres Alumno</h3>
+            <h3 className="text-xl font-bold">Si ya eres Alumno</h3>
             <p>Estamos disponibles aquí</p>
-
             <ButtonPrimary classSpan="flex justify-center items-center gap-4">
               <IconWhatsApp /> WhatsApp
             </ButtonPrimary>
             <p>Consulta con atención al alumno el estado de tus notas y envio de certificados.</p>
             <p>
               (*) Al hacer clic aceptas nuestra política de{" "}
-              <Link className="text-primary dark:text-sky-500 underline" to="/legal/terminos-servicio">
+              <Link className="underline text-primary dark:text-sky-500" to="/legal/terminos-servicio">
                 tratamiento de datos personales.
               </Link>
             </p>

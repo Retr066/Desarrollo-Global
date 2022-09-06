@@ -1,4 +1,4 @@
-import { IconTelegram, IconWhatsApp } from "../../../../../../assets/svgs/IconsSocialMedia";
+import { IconTelegram, IconWhatsApp } from "../../../../../../assets/svgs";
 
 export const Descripcion = ({ openTab }) => {
   return (
