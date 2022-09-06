@@ -37,4 +37,11 @@ export const links = [
     href: false,
     Icon: ({ className }) => <StatusOnlineIcon className={`${className}`} />,
   },
+  {
+    to: "/live",
+    nombre: "En vivo",
+    href: false,
+    Icon: ({ className }) => <StatusOnlineIcon className={`${className}`} />,
+  },
+
 ];

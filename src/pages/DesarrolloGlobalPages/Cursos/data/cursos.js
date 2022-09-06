@@ -53,7 +53,7 @@ export const cursos = [
     titulo: "50+ Best creative website themes & templates",
     descripcion:
       "50+ Best creative website themes & templates and Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elaboracion de instrumentos de Gestion Pei y Poi y Lorem ipsum dolor sit amet, consectetur adipiscing elit.Elaboracion de instrumentos de Gestion Pei y Poi y Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "https://s3-us-west-2.amazonaws.com/uploads-desarrolloglobal.pe/2021/05/contrataciones-2.png",
+    image: "https://s3.us-west-2.amazonaws.com/uploads-desarrolloglobal.pe/2022/07/Excel.webp",
     slug: "contrataciones-estado",
     certificacion: "Certificación Universitaria",
     estado: "EN VIVO",
@@ -102,7 +102,7 @@ export const cursos = [
     titulo: "50+ Best creative website themes & templates",
     descripcion:
       "50+ Best creative website themes & templates and Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elaboracion de instrumentos de Gestion Pei y Poi y Lorem ipsum dolor sit amet, consectetur adipiscing elit.Elaboracion de instrumentos de Gestion Pei y Poi y Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "https://s3-us-west-2.amazonaws.com/uploads-desarrolloglobal.pe/2021/05/Invierte%20pe-2.png",
+    image: "https://s3.us-west-2.amazonaws.com/uploads-desarrolloglobal.pe/2022/05/Contrataciones+del+estado.webp",
     slug: "invierte-peru",
     certificacion: "Certificación Universitaria",
     estado: "GRABADO",
